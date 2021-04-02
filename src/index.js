@@ -19,8 +19,6 @@ refs.searchForm.addEventListener('submit', onSearch)
 
 refs.loadMoreBtn.addEventListener('click', onLoadMore)
 
-
-
 refs.galleryList.addEventListener('click',onClick)
 
 
