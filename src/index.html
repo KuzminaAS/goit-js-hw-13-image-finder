@@ -5,41 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Webpack Starter Kit</title>
-
-    <!-- Don't forget to delete this style tag. -->
-    <style>
-      body {
-        min-height: 100vh;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .intro {
-        text-align: center;
-      }
-
-      .intro h1 {
-        margin-top: 0;
-        font-weight: 500;
-        font-size: 40px;
-      }
-
-      .intro img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-      }
-    </style>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <article class="intro">
-      <h1>Webpack starter kit</h1>
+    <form class="search-form" id="search-form">
+      <div class="form-group">
+        <input
+          class="input-search-img"
+          type="text"
+          name="query"
+          autocomplete="off"
+          placeholder="Search images..."
+        />
+      </div>
+      <button type="submit" class="btn-primary">Search</button>
+    </form>
 
-      <!-- HTML image reference example. -->
-      <img src="./images/intro.png" alt="" width="640" />
-    </article>
+    <ul class="gallery">
+      <!-- Список <li> с карточками изображений -->
+    </ul>
+
+    <button type="button" class="btn-secondary button" data-action="load-more">
+      <span class="label">Show more</span>
+    </button>
   </body>
 </html>

@@ -1,20 +1,99 @@
-html {
-  box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  color: #2a2a2a;
+  background-image: url(./img-texture.jpeg);
+}
 
-  /*
-   * CSS image reference example.
-   */
-  background-image: url('./images/bg-pattern.png');
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  margin-bottom: 24px;
+}
+
+.input-search-img {
+  width: 400px;
+  height: 40px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-primary {
+  font-size: 16px;
+  padding: 12px 28px;
+  margin-left: 20px;
+  margin-right: 0px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgb(15, 113, 151);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.btn-primary:hover {
+  background-color: #4caf50;
+  color: rgb(37, 36, 36);
+}
+.btn-secondary {
+  font-size: 16px;
+  padding: 12px 28px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgb(15, 113, 151);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.btn-secondary.is-hidden {
+  display: none;
+}
+.btn-secondary:hover {
+  background-color: #4caf50;
+  color: rgb(37, 36, 36);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 20px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  max-width: calc(100vw - 80px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.imgOriginal {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-image: 5%;
+}
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+.gallery-list-item {
+  max-width: 450px;
+  background: #ffffff;
+  border: 1px solid #807e7e;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
